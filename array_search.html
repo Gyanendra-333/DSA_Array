@@ -6,9 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Searching Element in Array</title>
+
+    <script>
+        // let data = [10, 20, 30, 40, 50, 60, 70];
+        // let find = 30;
+        // let index;
+
+        // for (let i = 0; i < data.length - 1; i++) {
+        //     if (data[i] == find) {
+        //         index = i;
+        //         break;
+        //     }
+        // }
+        // console.warn(index);
+        // console.warn(data.typeOf(find));
+
+        function serachElm() {
+
+            let data = [10, 20, 30, 40, 50, 60, 70];
+            let find = document.getElementById('serach01').value;
+            let index;
+
+            for (let i = 0; i < data.length - 1; i++) {
+                if (data[i] == find) {
+                    index = i;
+                    break;
+                }
+            }
+            console.warn(index);
+        }
+    </script>
 </head>
 
 <body>
+
+    <input type="text" placeholder="Enter Value" id="search01">
+    <button onclick="serachElm()">Serach Element</button>;
 
 </body>
 
