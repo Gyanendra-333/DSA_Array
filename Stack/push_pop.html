@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Data Structure</title>
+    <script>
+
+        let data = [];
+        let currSize = data.length;
+        let maxVal = 5;
+        function push(newVal) {
+            if (currSize >= maxVal) {
+                alert("You can not add new val " + newVal)
+            }
+            data[currSize] = newVal;
+            currSize += 1;
+        }
+        function pop() {
+            if (currSize >= 0) {
+                currSize -= 1;
+                data.length = currSize;
+            }
+            else { "stack is Already Empty" }
+        }
+        push(20);
+        push(10);
+        push(50);
+        push(60);
+        push(70);
+        // push(30);
+        pop();
+        pop();
+        console.warn(data);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
